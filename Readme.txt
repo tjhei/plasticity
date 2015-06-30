@@ -1,17 +1,18 @@
-For further information to the source code of file step-42.cc please check
-tutorial step-42 of the open source library deal.II. To run the programm you
-have to install deal.II as well as Trilinos and p4est. On www.dealii.org you
-will find everthing you need for this purpose.
+Example code for elastoplatic contact problems
 
-Once you have installed everthing you can start a computation by the following
+This code is accompanying the paper
+
+J. Frohne, T. Heister, W. Bangerth
+Efficient numerical methods for the large-scale, parallel solution of elastoplastic contact problems
+-- Accepted for publication in International Journal for Numerical Methods in Engineering
+
+For further information to the source code please check the tutorial step-42
+of the open source library deal.II. To run the program you have to install
+deal.II as well as Trilinos and p4est.
+
+Once you have installed everthing you can start a computation with the following
 command:
 
-mpirun -np 4 step-42 filename
+mpirun -n 4 ./step-42 filename.prm
 
-"filename" has to be replaced by one of the files:
-
-default.prm                  its_symbol_halfsphere.prm           p1_global.prm
-its_sphere_box.prm           its_symbol_halfsphere_transfer.prm  p2_adaptive.prm
-its_sphere_box_transfer.prm  p1_adaptive.prm                     p2_global.prm.
-
-Obviously you can modify the prm-files for your issues.
+"filename.prm" has to be replaced by one of the .prm files.
