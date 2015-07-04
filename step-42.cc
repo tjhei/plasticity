@@ -1,18 +1,9 @@
-/* $Id: step-42.cc 28976 2013-03-21 17:43:29Z heister $ */
-/* Author: Wolfgang Bangerth, University of Heidelberg, 1999 */
+/*
+  modified step-42, see readme.txt for details
 
-/*    $Id: step-42.cc 28976 2013-03-21 17:43:29Z heister $       */
-/*                                                                */
-/*    Copyright (C) 1999-2012 by the deal.II authors */
-/*                                                                */
-/*    This file is subject to QPL and may not be  distributed     */
-/*    without copyrightG and license information. Please refer     */
-/*    to the file deal.II/doc/license.html for the  text  and     */
-/*    further information on this license.                        */
+  W. Bangerth, J. Frohne,  T. Heister
+ */
 
-// @sect3{Include files}
-// We are using the the same
-// include files as in step-41:
 #include <deal.II/grid/tria.h>
 #include <deal.II/dofs/dof_handler.h>
 #include <deal.II/grid/grid_generator.h>
@@ -71,33 +62,6 @@
 namespace Step42
 {
   using namespace dealii;
-
-// @sect3{The <code>Input</code> class template}
-
-// This class has the the only purpose
-// to read in data from a picture file
-// that has to be stored in pbm ascii
-// format. This data will be bilinear
-// interpolated and provides in this way
-// a function which describes an obstacle.
-//
-// The data which we read in by the
-// function read_obstacle () from the file
-// "obstacle_file.pbm" will be stored
-// in a double std::vector named
-// obstacle_data.
-// This vector composes the base
-// to calculate a piecewise bilinear
-// function as a polynomial interpolation.
-// This will be done by obstacle_function ().
-//
-// In the function run () of the class
-// PlasticityContactProblem we create
-// an object of the class Input which will
-// be used in the class Obstacle to
-// supply the obstacle function in
-// update_solution_and_constraints () of
-// the class PlasticityContactProblem.
 
   template<int dim>
   class Input
