@@ -762,7 +762,7 @@ namespace Step42
          * We start with a 3x3,4x4, or 5x5 base mesh (whichever is closed in cell
          * count).
          */
-        unsigned int ref = (n_initial_refinements + 1) / 3;
+        ref = (n_initial_refinements + 1) / 3;
         unsigned int remain = n_initial_refinements + 1 - ref * 3;
         unsigned int rep = 3;
         if (remain == 1)
