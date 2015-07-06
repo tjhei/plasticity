@@ -1,6 +1,9 @@
 # Listing of Parameters
 # ---------------------
 
+# Parameter file used for the computations which yields the results
+# in table 4 (Global mesh refinement with polynomial degree p = 2).
+
 # polynomial degree of the FE_Q finite element space, typically 1 or 2
 set polynomial degree             = 2
 
