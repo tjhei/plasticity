@@ -2,7 +2,7 @@
 # ---------------------
 
 # Parameter file used for the computations which yields the results
-# in table 2 (left number of the last two columns).
+# in table 1 (left number of the last two columns).
 
 # polynomial degree of the FE_Q finite element space, typically 1 or 2
 set polynomial degree             = 1
