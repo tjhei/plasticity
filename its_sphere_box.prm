@@ -27,6 +27,8 @@ set obstacle filename             =
 # leave empty to put into current directory
 set output directory              = its
 
+# No interpolation of the solution from the previous to the next mesh upon
+# mesh refinement.
 set transfer solution = false
 
 set base mesh = box
