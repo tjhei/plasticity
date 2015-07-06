@@ -1,6 +1,9 @@
 # Listing of Parameters
 # ---------------------
 
+# Parameter file used for the computations which yields the results
+# in table 2 (left number of the last two columns).
+
 # polynomial degree of the FE_Q finite element space, typically 1 or 2
 set polynomial degree             = 1
 
@@ -24,6 +27,8 @@ set obstacle filename             = obstacle_file.pbm
 # leave empty to put into current directory
 set output directory              = its
 
+# Interpolation of the solution from the previous to the next mesh upon
+# mesh refinement.
 set transfer solution = true
 
 set base mesh = half sphere
